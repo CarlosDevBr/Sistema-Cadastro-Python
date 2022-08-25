@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador</title>
+</head>
+<body>
+    <h2>CADASTRO DE USUÁRIO</h2>
+    <form method="post">
+        {% csrf_token %} <!-- cross site request forgery-->
+        nome<input type=”text” name="name"><br>
+        rua<input type="text" name="street"><br>
+        complemento<input type="text" name="complemention"><br>
+        bairro<input type="text" name="district"><br>
+        cidade<input type="text" name="city"><br>
+        estado<input type="text" name="state"><br>
+        cep<input type="text" name="cep"><br>
+        email<input type="text" name="email"><br>
+        <button type="submit">Salvar</button><br>
+    </form>
+</body>
+</html>
